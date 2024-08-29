@@ -179,6 +179,7 @@ h6 {
   text-align: center;
   text-transform: capitalize;
   letter-spacing: var(--mainSpacing);
+  margin-left: 33px;
 }
 .banner h1 {
   font-size: 2.5rem;
@@ -197,6 +198,7 @@ h6 {
   .banner {
     padding: 2rem 3rem;
   }
+
   .banner h1 {
     font-size: 3rem;
   }
