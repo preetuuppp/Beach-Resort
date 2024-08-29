@@ -5,7 +5,7 @@ const RoomList = ({ rooms }) => {
   if (rooms.length === 0) {
     return (
       <div className="empty-search">
-        <h3>Unfortunity not found</h3>
+        <h3>Unfortunately not found</h3>
       </div>
     );
   }

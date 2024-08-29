@@ -10,6 +10,7 @@ class RoomProvider extends Component {
     featuredRooms: [],
     loading: true,
     type: "all",
+    capacity: 1,
     price: 0,
     minPrice: 0,
     maxPrice: 0,
@@ -30,6 +31,7 @@ class RoomProvider extends Component {
       featuredRooms,
       sortedRooms: rooms,
       loading: false,
+      price: maxPrice,
       maxSize,
       maxPrice,
     });
@@ -79,6 +81,11 @@ class RoomProvider extends Component {
     //filter by type
     if (type !== "all") {
       tempRooms = tempRooms.filter((room) => room.type === type);
+    }
+
+    //filter by capacity
+    if (capacity !== 1) {
+      tempRooms = tempRooms.filter((room) => room.capacity >= capacity);
     }
 
     //change state
